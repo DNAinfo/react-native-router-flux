@@ -18,6 +18,7 @@ import {
   Switch,
   Modal,
   Actions,
+  ActionConst,
 } from 'react-native-router-flux';
 import Error from './components/Error';
 import Home from './components/Home';
@@ -26,19 +27,6 @@ import TabIcon from './components/TabIcon';
 import EchoView from './components/EchoView';
 import NavigationDrawer from './components/NavigationDrawer';
 import Button from 'react-native-button';
-
-const Right = () => (
-  <Text
-    style={{
-      width: 80,
-      height: 37,
-      position: 'absolute',
-      bottom: 4,
-      right: 2,
-      padding: 8,
-    }}
-  >Right</Text>
-);
 
 const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: 'transparent', justifyContent: 'center',
@@ -92,7 +80,7 @@ const SwitcherPage = (props) => (
     </Button>
     <Button
       onPress={() => {
-        Actions.launch({ type: 'reset' });
+        Actions.launch({ type: ActionConst.RESET });
       }}
     >
       Exit
@@ -131,7 +119,7 @@ class Example extends Component {
             </Scene>
             <Scene key="register" component={Register} title="Register" />
             <Scene key="register2" component={Register} title="Register2" duration={1} />
-            <Scene key="home" component={Home} title="Replace" type="replace" />
+            <Scene key="home" component={Home} title="Replace" type={ActionConst.REPLACE} />
             <Scene key="launch" component={Launch} title="Launch" initial />
             <Scene key="login" direction="vertical" >
               <Scene key="loginModal" direction="vertical" component={Login} title="Login" />
@@ -185,7 +173,7 @@ class Example extends Component {
                     key="tab2_1"
                     component={TabView}
                     title="Tab #2_1"
-                    renderRightButton={() => <Right />}
+                    renderRightButton={() => <Text>Right</Text>}
                   />
                   <Scene
                     key="tab2_2"

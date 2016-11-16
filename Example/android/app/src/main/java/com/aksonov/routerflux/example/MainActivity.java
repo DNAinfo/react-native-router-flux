@@ -1,4 +1,4 @@
-package com.example;
+package com.aksonov.routerflux.example;
 
 import com.facebook.react.ReactActivity;
 

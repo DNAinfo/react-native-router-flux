@@ -1,6 +1,6 @@
 {
   "name": "react-native-router-flux",
-  "version": "3.30.3",
+  "version": "3.37.0",
   "description": "React Native Router using Flux architecture",
   "repository": {
     "type": "git",
@@ -29,7 +29,7 @@
     "email": "akso.nov@gmail.com",
     "url": "http://aksonov.com"
   },
-  "license": "ISC",
+  "license": "MIT",
   "maintainers": [
     {
       "name": "aksonov",
@@ -37,6 +37,7 @@
     }
   ],
   "dependencies": {
+    "react-addons-pure-render-mixin": "15.0.2",
     "react-native-experimental-navigation": "0.26.x",
     "react-native-tabs":  "git://github.com/DNAinfo/react-native-tabs.git",
     "react-static-container": "1.0.1"
