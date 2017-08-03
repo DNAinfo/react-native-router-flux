@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
   },
 });
 
-class TabbedView extends Component {
+class TabbedView extends React.Component {
 
   static propTypes = {
     navigationState: PropTypes.object.isRequired,

@@ -1,5 +1,5 @@
 import 'react-native';
-import React from 'react';
+import React, { Component } from 'react';
 
 import Example from '../Example';
 jest.unmock('Image');

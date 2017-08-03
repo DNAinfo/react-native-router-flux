@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { expect } from 'chai';
 
 import Scene from '../src/Scene';

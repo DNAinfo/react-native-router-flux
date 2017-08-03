@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 
-import React from 'react';
+import React, { Component } from 'react';
 
 import * as ActionConst from '../src/ActionConst';
 import { ActionsTest } from '../src/Actions';
